@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "black_scholes_monte_carlo",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "black_scholes_vanilla_pde", "black_scholes_vanilla_pde\black_scholes_vanilla_pde.vcxproj", "{1E9543D8-F1C1-4DAF-8C73-3C2FDF866994}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asian_option_monte_carlo", "asian_option_monte_carlo\asian_option_monte_carlo.vcxproj", "{725109A2-E4E9-49AD-803C-4FF8BE7696E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{1E9543D8-F1C1-4DAF-8C73-3C2FDF866994}.Release|x64.Build.0 = Release|x64
 		{1E9543D8-F1C1-4DAF-8C73-3C2FDF866994}.Release|x86.ActiveCfg = Release|Win32
 		{1E9543D8-F1C1-4DAF-8C73-3C2FDF866994}.Release|x86.Build.0 = Release|Win32
+		{725109A2-E4E9-49AD-803C-4FF8BE7696E4}.Debug|x64.ActiveCfg = Debug|x64
+		{725109A2-E4E9-49AD-803C-4FF8BE7696E4}.Debug|x64.Build.0 = Debug|x64
+		{725109A2-E4E9-49AD-803C-4FF8BE7696E4}.Debug|x86.ActiveCfg = Debug|Win32
+		{725109A2-E4E9-49AD-803C-4FF8BE7696E4}.Debug|x86.Build.0 = Debug|Win32
+		{725109A2-E4E9-49AD-803C-4FF8BE7696E4}.Release|x64.ActiveCfg = Release|x64
+		{725109A2-E4E9-49AD-803C-4FF8BE7696E4}.Release|x64.Build.0 = Release|x64
+		{725109A2-E4E9-49AD-803C-4FF8BE7696E4}.Release|x86.ActiveCfg = Release|Win32
+		{725109A2-E4E9-49AD-803C-4FF8BE7696E4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
