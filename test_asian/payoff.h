@@ -1,10 +1,8 @@
 #pragma once
 class PayOff
 {
-private:
-	double K;
 public:
-	PayOff(double& _K) {};
+	PayOff() {};
 	virtual ~PayOff() {};
 
 	virtual double operator() (const double& S) const = 0;
@@ -12,8 +10,10 @@ public:
 
 class PayOffCall : public PayOff
 {
+private:
+	double K;
 public:
-	PayOffCall(double& _K) {};
+	PayOffCall(const double& _K) {};
 	virtual ~PayOffCall() {};
 
 	virtual double operator() (const double& S) const;
@@ -21,8 +21,10 @@ public:
 
 class PayOffPut : public PayOff
 {
+private:
+	double K;
 public:
-	PayOffPut();
+	PayOffPut(const double& _K) {};
 	virtual ~PayOffPut() {};
 
 	virtual double operator() (const double& S) const;
