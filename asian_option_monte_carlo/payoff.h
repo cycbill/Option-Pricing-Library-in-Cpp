@@ -5,7 +5,7 @@
 
 class PayOff {
 public:
-	PayOff() {}; // Default (no parameter) constructor
+	PayOff(); // Default (no parameter) constructor
 	virtual ~PayOff() {}; // Virtual destructor
 
 	// Overload () operator, turns the PayOff into a abstract function object
