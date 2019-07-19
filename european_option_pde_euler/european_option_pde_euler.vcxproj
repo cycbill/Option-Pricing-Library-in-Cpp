@@ -117,7 +117,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="fdm.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="option.cpp" />
+    <ClCompile Include="payoff.cpp" />
+    <ClCompile Include="pde.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fdm.h" />
+    <ClInclude Include="option.h" />
+    <ClInclude Include="payoff.h" />
+    <ClInclude Include="pde.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
