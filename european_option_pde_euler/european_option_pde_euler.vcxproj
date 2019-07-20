@@ -21,9 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{344E0D83-2756-4606-948D-2589765720D1}</ProjectGuid>
-    <RootNamespace>blackscholesvanillapde</RootNamespace>
+    <RootNamespace>europeanoptionpdeeuler</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
-    <ProjectName>european_option_pde_euller</ProjectName>
+    <ProjectName>european_option_pde_euler</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
