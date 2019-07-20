@@ -15,7 +15,7 @@ public:
 	// Boundary and initial conditions
 	virtual double boundary_left(double t, double x) const = 0;
 	virtual double boundary_right(double t, double x) const = 0;
-	double init_cond(double x) const = 0;
+	virtual double init_cond(double x) const = 0;
 };
 
 // Black-Scholes PDE

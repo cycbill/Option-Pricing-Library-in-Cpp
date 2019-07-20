@@ -1,37 +1,36 @@
-//PDE method for vanilla option pricing under Black-Scholes framework
-#include <iostream>
-#include <Eigen/Dense>
-
-using namespace Eigen;
-using namespace std;
+#include "payoff.h"
+#include "option.h"
+#include "pde.h"
+#include "fdm.h"
 
 int main() {
+	// Create the option parameters
+	double K = 0.5;		// Strike
+	double r = 0.25;	// Risk-free rate
+	double v = 0.2;		// Volatility of the underlying
+	double T = 1.00;	// One year until expiry
 
-	int callput = 1;
-	double spot = 7.7610;
-	double strike = 7.7481;
-	double vol = 0.0112424490582748;
-	double te = 0.079452054795;
-	double td = 0.084931506849;
-	double rd = 0.001444440118;
-	double rf = 0.001549120310;
+	// FDM discretisation parameters
+	double x_dom = 1.0;		// Spot goes from [0.0, 1.0]
+	unsigned long J = 20;
+	double t_dom = T;		// Time period as for the option
+	unsigned long N = 20;
 
-	double num_t = 101;
-	double num_spot = 201;
+	// Create the PayOff and Option objects
+	PayOff* pay_off_call = new PayOffCall(K);
+	VanillaOption* call_option = new VanillaOption(K, r, T, v, pay_off_call);
 
-	double range = 5.0 * vol * sqrt(te);
-	double max_spot = log(spot) + ((rd - rf) * td + 0.5 * vol * vol * te + range);
-	double min_spot = log(spot) + ((rd - rf) * td + 0.5 * vol * vol * te - range);
-	double dt = te / num_t;
-	double ds = (max_spot - min_spot) / (num_spot - 1);
+	// Create the PDE and FDM objects
+	BlackScholesPDE* bs_pde = new BlackScholesPDE(call_option);
+	FDMEulerExplicit fdm_euler(x_dom, J, t_dom, N, bs_pde);
 
-	VectorXd log_s_grid = VectorXd::LinSpaced(num_spot, min_spot, max_spot);
+	// Run the FDM solver
+	fdm_euler.step_march();
 
-	e
+	// Delete the PDE, PayOff and Option Objects
+	delete bs_pde;
+	delete call_option;
+	delete pay_off_call;
 
-
-
-
-	cin.get();
 	return 0;
 }
