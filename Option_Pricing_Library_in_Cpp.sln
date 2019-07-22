@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "random_number_generation", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "standard_normal_distribution", "standard_normal_distribution\standard_normal_distribution.vcxproj", "{4E90E52D-2A6C-4818-886F-5530C775334D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bivariate_correlated_stand_norm_dist", "bivariate_correlated_stand_norm_dist\bivariate_correlated_stand_norm_dist.vcxproj", "{7BFC4164-5F52-49FB-B717-A528D63BCB8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{4E90E52D-2A6C-4818-886F-5530C775334D}.Release|x64.Build.0 = Release|x64
 		{4E90E52D-2A6C-4818-886F-5530C775334D}.Release|x86.ActiveCfg = Release|Win32
 		{4E90E52D-2A6C-4818-886F-5530C775334D}.Release|x86.Build.0 = Release|Win32
+		{7BFC4164-5F52-49FB-B717-A528D63BCB8F}.Debug|x64.ActiveCfg = Debug|x64
+		{7BFC4164-5F52-49FB-B717-A528D63BCB8F}.Debug|x64.Build.0 = Debug|x64
+		{7BFC4164-5F52-49FB-B717-A528D63BCB8F}.Debug|x86.ActiveCfg = Debug|Win32
+		{7BFC4164-5F52-49FB-B717-A528D63BCB8F}.Debug|x86.Build.0 = Debug|Win32
+		{7BFC4164-5F52-49FB-B717-A528D63BCB8F}.Release|x64.ActiveCfg = Release|x64
+		{7BFC4164-5F52-49FB-B717-A528D63BCB8F}.Release|x64.Build.0 = Release|x64
+		{7BFC4164-5F52-49FB-B717-A528D63BCB8F}.Release|x86.ActiveCfg = Release|Win32
+		{7BFC4164-5F52-49FB-B717-A528D63BCB8F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
