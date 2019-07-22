@@ -5,7 +5,7 @@
 ### 1. Prerequisite
 1. [Random Number Generation](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/random_number_generation)
 2. [Standard Normal Distribution](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/standard_normal_distribution)
-3. [Bivariate Random Numbers via Correlated Standard Normal Distribution](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/bivariate_correlated_stand_norm_dist)
+3. [Bivariate Random Numbers with Correlated SND](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/bivariate_correlated_stand_norm_dist)
 
 ### 2. Black-Scholes Framework
 #### European Option
