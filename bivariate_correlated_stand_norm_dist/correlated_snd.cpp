@@ -17,3 +17,7 @@ void CorrelatedSND::correlation_calc(std::vector<double>& dist_draws)
 	}
 }
 
+void CorrelatedSND::random_draws(const std::vector<double>& uniform_draws,
+	std::vector<double>& dist_draws) {
+	// T
+}
