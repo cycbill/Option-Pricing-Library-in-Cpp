@@ -16,8 +16,3 @@ void CorrelatedSND::correlation_calc(std::vector<double>& dist_draws)
 		dist_draws[i] = rho * (*uncorr_draws)[i] + dist_draws[i] * sqrt(1 - rho * rho);
 	}
 }
-
-void CorrelatedSND::random_draws(const std::vector<double>& uniform_draws,
-	std::vector<double>& dist_draws) {
-	// T
-}
