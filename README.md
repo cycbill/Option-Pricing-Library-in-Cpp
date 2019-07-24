@@ -11,6 +11,8 @@
 #### European Option
 1. [European Option Pricing with Analytical Formula](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/black_scholes_vanilla)
 2. [European Option Pricing with Monte Carlo Method](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/black_scholes_monte_carlo)
+3. [European Option Pricing with Finite Difference Method](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/european_option_pde_euler)
+    - Note: Euler Scheme, Dirichlet Boundary
 
 #### Asian Option
 1. [Asian Option Pricing with Monte Carlo Method](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/asian_option_monte_carlo)
