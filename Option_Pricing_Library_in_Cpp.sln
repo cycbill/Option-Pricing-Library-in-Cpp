@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "standard_normal_distributio
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bivariate_correlated_stand_norm_dist", "bivariate_correlated_stand_norm_dist\bivariate_correlated_stand_norm_dist.vcxproj", "{7BFC4164-5F52-49FB-B717-A528D63BCB8F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "european_option_heston_pde", "european_option_heston_pde\european_option_heston_pde.vcxproj", "{3DCF3C3C-AE1B-49AE-9E88-C4D3D8AF28FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{7BFC4164-5F52-49FB-B717-A528D63BCB8F}.Release|x64.Build.0 = Release|x64
 		{7BFC4164-5F52-49FB-B717-A528D63BCB8F}.Release|x86.ActiveCfg = Release|Win32
 		{7BFC4164-5F52-49FB-B717-A528D63BCB8F}.Release|x86.Build.0 = Release|Win32
+		{3DCF3C3C-AE1B-49AE-9E88-C4D3D8AF28FE}.Debug|x64.ActiveCfg = Debug|x64
+		{3DCF3C3C-AE1B-49AE-9E88-C4D3D8AF28FE}.Debug|x64.Build.0 = Debug|x64
+		{3DCF3C3C-AE1B-49AE-9E88-C4D3D8AF28FE}.Debug|x86.ActiveCfg = Debug|Win32
+		{3DCF3C3C-AE1B-49AE-9E88-C4D3D8AF28FE}.Debug|x86.Build.0 = Debug|Win32
+		{3DCF3C3C-AE1B-49AE-9E88-C4D3D8AF28FE}.Release|x64.ActiveCfg = Release|x64
+		{3DCF3C3C-AE1B-49AE-9E88-C4D3D8AF28FE}.Release|x64.Build.0 = Release|x64
+		{3DCF3C3C-AE1B-49AE-9E88-C4D3D8AF28FE}.Release|x86.ActiveCfg = Release|Win32
+		{3DCF3C3C-AE1B-49AE-9E88-C4D3D8AF28FE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
