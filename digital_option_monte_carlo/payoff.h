@@ -1,5 +1,4 @@
-#ifndef __PAYOFF_HPP
-#define __PAYOFF_HPP
+#pragma once
 
 #include <algorithm> // This is needed for the std::max comparison function, used in the pay-off calculations
 
@@ -8,7 +7,7 @@ public:
 	PayOff(); // Default (no parameter) constructor
 	virtual ~PayOff() {}; // Virtual destructor
 
-	// Overload () operator, turns the PayOff into a abstract function object
+	// Overload () operator, turns the PayOff into an abstract function object
 	virtual double operator() (const double& S) const = 0;
 };
 
@@ -17,21 +16,20 @@ private:
 	double K; // Strike price
 
 public:
-	PayOffCall(const double& K_);
+	PayOffCall(const double& _K);
 	virtual ~PayOffCall() {};
 
-	//Virtual function is now over-ridden (not pure-virtual anymore)
+	// Virtual function is now over-ridden (no pure-virtual anymore)
 	virtual double operator() (const double& S) const;
 };
 
 class PayOffPut : public PayOff {
 private:
-	double K; // Strike
+	double K; // Strike price
 
 public:
-	PayOffPut(const double& K_);
+	PayOffPut(const double& _K);
 	virtual ~PayOffPut() {};
 	virtual double operator() (const double& S) const;
 };
 
-#endif // !__PAY_OFF_HPP

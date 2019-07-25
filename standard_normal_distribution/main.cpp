@@ -20,18 +20,6 @@ int main()
 	// Create the Standard Normal Distribution and random draw vectors
 	StandardNormalDistribution snd;
 	std::vector<double> normal_draws(num_draws, 0.0);
-	/*
-	// Create the Standard Normal Distribution and random draw vectors
-	StandardNormalDistribution snd;
-	std::vector<double> uniform_draws(20, 0.0);
-	std::vector<double> normal_draws(20, 0.0);
-
-	// Simple random number generation method based on RAND
-	srand(3);
-	for (int i = 0; i < uniform_draws.size(); i++) {
-		uniform_draws[i] = rand() / static_cast<double>(RAND_MAX);
-	}
-	*/
 
 	// Create standard normal draws
 	snd.random_draws(uniform_draws, normal_draws);
