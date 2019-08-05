@@ -36,6 +36,7 @@ void HestonEuler::calc_spot_path(const std::vector<double>& spot_draws,
 	// path. Uses a similar Euler Truncation method to vol path.
 	for (int i = 1; i < vec_size; i++) {
 		double v_max = std::max(vol_path[i - 1], 0.0);
-		spot_path[i] = spot_path[i-1] 
+		spot_path[i] = spot_path[i - 1] + exp((pOption->r - 0.5 * v_max)*dt +
+			sqrt(v_max*dt)*spot_draws[i - 1]);
 	}
 }
