@@ -12,4 +12,4 @@ FDMCrankNicolson::FDMCrankNicolson(double _x_dom, unsigned long _J,
 void FDMCrankNicolson::calculate_step_size() {
 	dx = x_dom / static_cast<double>(J - 1);
 	dt = t_dom / static_cast<double>(N - 1);
-}
+} a
