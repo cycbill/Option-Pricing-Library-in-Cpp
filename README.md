@@ -3,9 +3,13 @@
 ## Libraries Category
 
 ### 1. Prerequisite
+#### Random Variable Generation
 1. [Random Number Generation with Uniform Distribution](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/random_number_generation)
 2. [Random Number Generation with Standard Normal Distribution](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/standard_normal_distribution)
 3. [Bivariate Random Number Generation with Correlated SND](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/bivariate_correlated_stand_norm_dist)
+
+### Linear Algobra
+1. [Tridiagonal Matrix Algorithm](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/tridiagonal_matrix_algorithm)
 
 ### 2. Black-Scholes Framework
 #### European Option
