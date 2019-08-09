@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "digital_option_monte_carlo"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tridiagonal_matrix_algorithm", "tridiagonal_matrix_algorithm\tridiagonal_matrix_algorithm.vcxproj", "{DD68F64C-F6AA-4F58-9F66-541C3F4C7F1C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "european_option_pde_crank_nicolson", "european_option_pde_crank_nicolson\european_option_pde_crank_nicolson.vcxproj", "{0CB8B92F-9676-4B29-8109-93DA1BE51CA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{DD68F64C-F6AA-4F58-9F66-541C3F4C7F1C}.Release|x64.Build.0 = Release|x64
 		{DD68F64C-F6AA-4F58-9F66-541C3F4C7F1C}.Release|x86.ActiveCfg = Release|Win32
 		{DD68F64C-F6AA-4F58-9F66-541C3F4C7F1C}.Release|x86.Build.0 = Release|Win32
+		{0CB8B92F-9676-4B29-8109-93DA1BE51CA5}.Debug|x64.ActiveCfg = Debug|x64
+		{0CB8B92F-9676-4B29-8109-93DA1BE51CA5}.Debug|x64.Build.0 = Debug|x64
+		{0CB8B92F-9676-4B29-8109-93DA1BE51CA5}.Debug|x86.ActiveCfg = Debug|Win32
+		{0CB8B92F-9676-4B29-8109-93DA1BE51CA5}.Debug|x86.Build.0 = Debug|Win32
+		{0CB8B92F-9676-4B29-8109-93DA1BE51CA5}.Release|x64.ActiveCfg = Release|x64
+		{0CB8B92F-9676-4B29-8109-93DA1BE51CA5}.Release|x64.Build.0 = Release|x64
+		{0CB8B92F-9676-4B29-8109-93DA1BE51CA5}.Release|x86.ActiveCfg = Release|Win32
+		{0CB8B92F-9676-4B29-8109-93DA1BE51CA5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
