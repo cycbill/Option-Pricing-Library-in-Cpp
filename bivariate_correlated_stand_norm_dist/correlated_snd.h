@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../standard_normal_distribution/statistics.h"
+#include "standard_normal_distribution/statistics.h"
 
 class CorrelatedSND : public StandardNormalDistribution
 {

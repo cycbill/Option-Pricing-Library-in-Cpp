@@ -1,7 +1,8 @@
+
 #include <iostream>
 #include <vector>
 
-#include "..\random_number_generation\lin_con_gen.h"
+#include "random_number_generation\lin_con_gen.h"
 #include "statistics.h"
 
 int main()

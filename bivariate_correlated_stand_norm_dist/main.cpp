@@ -1,5 +1,5 @@
-#include "../random_number_generation/lin_con_gen.h"
-#include "../standard_normal_distribution/statistics.h"
+#include "random_number_generation/lin_con_gen.h"
+#include "standard_normal_distribution/statistics.h"
 #include "correlated_snd.h"
 #include <fstream>
 #include <vector>
