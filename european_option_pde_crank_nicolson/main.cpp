@@ -3,9 +3,6 @@
 #include "../european_option_pde_euler/pde.h"
 #include "fdm.h"
 
-#include "../european_option_pde_euler/payoff.cpp"
-#include "../european_option_pde_euler/option.cpp"
-#include "../european_option_pde_euler/pde.cpp"
 
 int main() {
 	// Create the option parameters

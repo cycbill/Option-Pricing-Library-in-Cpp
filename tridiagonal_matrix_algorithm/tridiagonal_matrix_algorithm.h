@@ -2,7 +2,7 @@
 
 #include <vector>
 
-void tridiag_mtx_algo(size_t N,
+void tridiag_mtx_algo(int N,
 	std::vector<double>& A,
 	std::vector<double> B,
 	std::vector<double>& C,

@@ -1,9 +1,8 @@
 #pragma once
 
-#include "../european_option_pde_euler/pde.h"
 #include "../european_option_pde_euler/fdm.h"
 
-#include "../european_option_pde_euler/fdm.cpp"
+//#include "../european_option_pde_euler/pde.cpp"
 
 class FDMCrankNicolson : public FDMBase
 {
