@@ -3,6 +3,8 @@
 #include "../european_option_pde_euler/pde.h"
 #include "../european_option_pde_euler/fdm.h"
 
+#include "../european_option_pde_euler/fdm.cpp"
+
 class FDMCrankNicolson : public FDMBase
 {
 protected:
