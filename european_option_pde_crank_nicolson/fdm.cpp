@@ -55,7 +55,7 @@ void FDMCrankNicolson::calculate_inner_domain() {
 
 		// Differencing coefficients (see \alpha, \beta and \gamma in text)
 		alpha = dt_sig - dt_sig_2;
-		beta = - (2.0 * dt_sig) + (dt * dx * dx * (pde->zero_coeff(prev_t, x_values[j])));
+		beta = - (2.0 * dt_sig) + (0.5 * dt * dx * dx * (pde->zero_coeff(prev_t, x_values[j])));
 		gamma = dt_sig + dt_sig_2;
 
 		A[j-1] = - alpha;

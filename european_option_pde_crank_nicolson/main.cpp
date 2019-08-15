@@ -13,7 +13,7 @@ int main() {
 
 	// FDM discretisation parameters
 	double x_dom = 1.0;		// Spot goes from [0.0, 1.0]
-	unsigned long J = 20;
+	unsigned long J = 21;
 	double t_dom = T;		// Time period as for the option
 	unsigned long N = 20;
 
