@@ -12,7 +12,7 @@ Z = np.reshape(z, (20,20))
 
 
 y0 = np.transpose(Y[:,0])
-z0 = Z[-1,:]
+z0 = Z[-0,:]
 
 print(y0)
 print(z0)

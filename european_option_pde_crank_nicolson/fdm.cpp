@@ -65,6 +65,13 @@ void FDMCrankNicolson::calculate_inner_domain() {
 		D[j-1] = (alpha * old_result[j - 1] +
 			(dx * dx + beta) * old_result[j] +
 			gamma * old_result[j + 1]) / (dx*dx);
+
+		if (j == 1) {
+			D[j - 1] = D[j - 1] + gamma * (old_result[0] + new_result[0]);
+		}
+		if (j == J - 2) {
+			D[j - 1] = D[j - 1] + alpha * (old_result[J - 1] + new_result[J - 1]);
+		}
 	}
 
 	tridiag_mtx_algo(J - 2, A, B, C, D, X);
