@@ -15,13 +15,13 @@ print(X.shape, Y.shape, Z.shape)
 step = 0.04
 maxval = 1.0
 fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')  #, cmap=cm.YlGnBu_r
+ax = fig.add_subplot(111, projection='3d', cmap=)  #
 
 ax.plot_surface(X, Y, Z, rstride=1, cstride=1)
 ax.set_zlim3d(0, 1.0)
-ax.set_xlabel(r'$S$')
-ax.set_ylabel(r'$T-t$')
-ax.set_zlabel(r'$C(S,t)$')
+ax.set_xlabel(r'S')
+ax.set_ylabel(r'time t')
+ax.set_zlabel(r'C(S,t)')
 
 elev = 40.0
 azim = 220.0

@@ -34,13 +34,13 @@ void FDMCrankNicolson::set_initial_conditions() {
 	}
 
 	// Temporal settings
-	prev_t = 0.0;
-	cur_t = 0.0;
+	prev_t = t_dom;
+	cur_t = t_dom;
 }
 
 void FDMCrankNicolson::calculate_boundary_conditions() {
-	new_result[0] = pde->boundary_left(prev_t, x_values[0]);
-	new_result[J - 1] = pde->boundary_right(prev_t, x_values[J - 1]);
+	new_result[0] = pde->boundary_left(cur_t, x_values[0]);
+	new_result[J - 1] = pde->boundary_right(cur_t, x_values[J - 1]);
 }
 
 void FDMCrankNicolson::calculate_inner_domain() {
@@ -50,28 +50,25 @@ void FDMCrankNicolson::calculate_inner_domain() {
 	// Only use inner result indices (1 to J-2)
 	for (unsigned long j = 1; j < J - 1; j++) {
 		// Temporary variables and throughout
-		double dt_sig = 0.5 * dt * (pde->diff_coeff(prev_t, x_values[j]));
-		double dt_sig_2 = dt * dx * 0.25 * (pde->conv_coeff(prev_t, x_values[j]));
+		double dt_diffu = dt * (pde->diff_coeff(prev_t, x_values[j]));
+		double dtdxp2_conv = dt * dx * 0.5 * (pde->conv_coeff(prev_t, x_values[j]));
 
 		// Differencing coefficients (see \alpha, \beta and \gamma in text)
-		alpha = dt_sig - dt_sig_2;
-		beta = - (2.0 * dt_sig) + (0.5 * dt * dx * dx * (pde->zero_coeff(prev_t, x_values[j])));
-		gamma = dt_sig + dt_sig_2;
+		alpha = 0.5 * (dt_diffu - dtdxp2_conv) / (dx * dx);
+		beta = - dt_diffu / (dx * dx) + 0.5 * dt * (pde->zero_coeff(prev_t, x_values[j]));
+		gamma = 0.5 * (dt_diffu + dtdxp2_conv) / (dx * dx);
 
 		A[j-1] = - alpha;
-		B[j-1] = dx * dx - beta;
+		B[j-1] = 1 - beta;
 		C[j-1] = - gamma;
 
 		D[j-1] = (alpha * old_result[j - 1] +
-			(dx * dx + beta) * old_result[j] +
-			gamma * old_result[j + 1]) / (dx*dx);
+			(1 + beta) * old_result[j] +
+			gamma * old_result[j + 1]);
 
-		if (j == 1) {
-			D[j - 1] = D[j - 1] + gamma * (old_result[0] + new_result[0]);
-		}
-		if (j == J - 2) {
-			D[j - 1] = D[j - 1] + alpha * (old_result[J - 1] + new_result[J - 1]);
-		}
+		if (j == 1) { D[j - 1] = D[j - 1] + alpha * new_result[0]; }
+
+		if (j == J - 2) { D[j - 1] = D[j - 1] + gamma * new_result[J - 1]; }
 	}
 
 	tridiag_mtx_algo(J - 2, A, B, C, D, X);
@@ -84,15 +81,14 @@ void FDMCrankNicolson::calculate_inner_domain() {
 void FDMCrankNicolson::step_march() {
 	std::ofstream fdm_out("fdm.csv");
 
-	while (cur_t < t_dom) {
-		cur_t = prev_t + dt;
+	for (unsigned long n = 1; n <= N; n++) {
+		cur_t = t_dom - n * dt;
 		calculate_boundary_conditions();
 		calculate_inner_domain();
 		for (unsigned long j = 0; j < J; j++) {
-			fdm_out << x_values[j] << " " << prev_t << " " << new_result[j] << std::endl;
+			fdm_out << x_values[j] << " " << cur_t << " " << new_result[j] << std::endl;
 		}
 		old_result = new_result;
-		prev_t = cur_t;
 	}
 
 	fdm_out.close();
