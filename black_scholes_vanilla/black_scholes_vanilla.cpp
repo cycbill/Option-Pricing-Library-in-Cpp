@@ -6,7 +6,7 @@ using namespace std;
 //double black_scholes_vanilla(int callput, double spot, double strike, double vol, double texp, 
 //	double tdel, )
 
-class BlackScholesVanilla {
+class BlackScholesEuropean {
 public:
 	int callput;
 	double spot, strike, vol, te, td, rd, rf;

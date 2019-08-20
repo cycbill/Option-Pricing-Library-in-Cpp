@@ -13,13 +13,13 @@ double normal_pdf(double x) {
 	return 1.0 / sqrt(2 * PI) * exp(-x * x / 2);
 }
 
-class BlackScholesVanilla {
+class BlackScholesEuropean {
 public:
 	int callput;
 	double spot, strike, vol, te, td, rd, rf;
 	double cfrd, cfrf, fwd, d1, d2, Nd1, Nd2, npd1;
 
-	BlackScholesVanilla(int callput, double spot, double strike, double vol, double te, double td, double rd, double rf) {
+	BlackScholesEuropean(int callput, double spot, double strike, double vol, double te, double td, double rd, double rf) {
 		//assign values to class member variables
 		this->callput = callput;
 		this->spot = spot;
@@ -40,32 +40,7 @@ public:
 		Nd2 = normal_cdf(callput * d2);
 		npd1 = normal_pdf(d1);
 	}
-	/*
-	double calc_d1(void) {
-		d1 = (log(fwd / strike) + 0.5 * vol * vol * te) / (vol * sqrt(te));
-		return d1;
-	}
 
-	double calc_d2(void) {
-		d2 = d2 - vol * sqrt(te);
-		return d2;
-	}
-
-	double calc_Nd1(void) {
-		Nd1 = normal_cdf(callput * d1);
-		return Nd1;
-	}
-
-	double calc_Nd2(void) {
-		Nd2 = normal_cdf(callput * d2);
-		return Nd2;
-	}
-
-	double calc_npd1(void) {
-		npd1 = normal_pdf(d1);
-		return npd1;
-	}
-	*/
 	double premium(void) {
 		return callput / cfrd * (fwd * Nd1 - strike * Nd2);
 	}
@@ -111,7 +86,7 @@ public:
 
 int main()
 {
-	BlackScholesVanilla BSVan(1, 7.7610, 7.7481, 0.0112424490582748, 0.079452054795, 0.084931506849, 0.001444440118, 0.001549120310);
+	BlackScholesEuropean BSVan(1, 7.7610, 7.7481, 0.0112424490582748, 0.079452054795, 0.084931506849, 0.001444440118, 0.001549120310);
 
 	cout << "CF rd: " << BSVan.cfrd << endl;
 	cout << "CF rf: " << BSVan.cfrf << endl;
