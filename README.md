@@ -17,9 +17,11 @@
 2. [European Option Pricing with Monte Carlo Method](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/black_scholes_monte_carlo)
 3. [European Option Pricing with Finite Difference Method](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/european_option_pde_euler)
     - Note: Euler Scheme, Dirichlet Boundary
-4. [European Option Pricing with Finite Difference and Crank-Nicolson Scheme](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/european_option_pde_crank_nicolson)
+4. [European Option Pricing with Finite Difference (Crank-Nicolson Scheme & Dirichlet Boundary)](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/european_option_pde_crank_nicolson)
     - Note: Crank-Nicolson Scheme, Dirichlet Boundary
-
+4. [European Option Pricing with Finite Difference (Crank-Nicolson Scheme & Neumann Boundary)](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/european_option_pde_crank_nicolson_neumann)
+    - Note: Crank-Nicolson Scheme, Neumann Boundary
+    
 #### Digital Option
 1. [Digital Option Pricing with Monte Carlo Method](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/digital_option_monte_carlo)
 
