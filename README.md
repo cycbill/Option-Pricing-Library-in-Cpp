@@ -28,6 +28,9 @@
 #### Asian Option
 1. [Asian Option Pricing with Monte Carlo Method](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/asian_option_monte_carlo)
 
+#### American Option
+1. [American Option Pricing with Binomial Tree](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/american_option_binomial_tree)
+
 ### 3. Heston Model
 #### European Option
 1. [European Option Pricing with Heston Model and Monte Carlo Method](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/european_option_heston_pde)
