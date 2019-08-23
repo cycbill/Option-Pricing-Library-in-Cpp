@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "european_option_pde_crank_n
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "european_option_pde_crank_nicolson_neumann", "european_option_pde_crank_nicolson_neumann\european_option_pde_crank_nicolson_neumann.vcxproj", "{36B9D24D-40EE-4114-A59E-A81BFEE25714}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "american_option_binomial_tree", "american_option_binomial_tree\american_option_binomial_tree.vcxproj", "{4FACEAE8-ECB6-486D-9C1B-2C9D19AF572F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{36B9D24D-40EE-4114-A59E-A81BFEE25714}.Release|x64.Build.0 = Release|x64
 		{36B9D24D-40EE-4114-A59E-A81BFEE25714}.Release|x86.ActiveCfg = Release|Win32
 		{36B9D24D-40EE-4114-A59E-A81BFEE25714}.Release|x86.Build.0 = Release|Win32
+		{4FACEAE8-ECB6-486D-9C1B-2C9D19AF572F}.Debug|x64.ActiveCfg = Debug|x64
+		{4FACEAE8-ECB6-486D-9C1B-2C9D19AF572F}.Debug|x64.Build.0 = Debug|x64
+		{4FACEAE8-ECB6-486D-9C1B-2C9D19AF572F}.Debug|x86.ActiveCfg = Debug|Win32
+		{4FACEAE8-ECB6-486D-9C1B-2C9D19AF572F}.Debug|x86.Build.0 = Debug|Win32
+		{4FACEAE8-ECB6-486D-9C1B-2C9D19AF572F}.Release|x64.ActiveCfg = Release|x64
+		{4FACEAE8-ECB6-486D-9C1B-2C9D19AF572F}.Release|x64.Build.0 = Release|x64
+		{4FACEAE8-ECB6-486D-9C1B-2C9D19AF572F}.Release|x86.ActiveCfg = Release|Win32
+		{4FACEAE8-ECB6-486D-9C1B-2C9D19AF572F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
