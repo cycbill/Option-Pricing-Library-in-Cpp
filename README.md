@@ -11,6 +11,9 @@
 ### Linear Algobra
 1. [Tridiagonal Matrix Algorithm](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/tridiagonal_matrix_algorithm)
 
+### Root-Finding Algorithms
+1. Newton-Raphson Method on Univariate Functions
+
 ### 2. Black-Scholes Framework
 #### European Option
 1. [European Option Pricing with Analytical Formula](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/black_scholes_vanilla)
