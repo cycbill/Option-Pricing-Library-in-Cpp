@@ -8,10 +8,10 @@
 2. [Random Number Generation with Standard Normal Distribution](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/standard_normal_distribution)
 3. [Bivariate Random Number Generation with Correlated SND](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/bivariate_correlated_stand_norm_dist)
 
-### Linear Algobra
+#### Linear Algobra
 1. [Tridiagonal Matrix Algorithm](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/tridiagonal_matrix_algorithm)
 
-### Root-Finding Algorithms
+#### Root-Finding Algorithms
 1. Newton-Raphson Method on Univariate Functions
 
 ### 2. Black-Scholes Framework
