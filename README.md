@@ -12,7 +12,7 @@
 1. [Tridiagonal Matrix Algorithm](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/tridiagonal_matrix_algorithm)
 
 #### Root-Finding Algorithms
-1. (Interval Bisection Method) (https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/interval_bisection_method)
+1. [Interval Bisection Method] (https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/interval_bisection_method)
     - Note: implied volatility solving as example
 
 ### 2. Black-Scholes Framework
