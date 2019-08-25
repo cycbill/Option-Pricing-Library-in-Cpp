@@ -15,27 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="interval_bisection.h">
+    <ClInclude Include="european_option_black_scholes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\random_number_generation\random.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\black_scholes_vanilla\black_scholes_formula.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\black_scholes_vanilla\standard_normal_functions.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="black_scholes_functor.h">
+    <ClInclude Include="..\standard_normal_distribution\statistics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="european_option_black_scholes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="black_scholes_functor.cpp">
+    <ClCompile Include="..\standard_normal_distribution\statistics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

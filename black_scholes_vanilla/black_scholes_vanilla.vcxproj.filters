@@ -18,12 +18,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="european_option_black_scholes.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="european_option_black_scholes.h">
+    <ClInclude Include="black_scholes_formula.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="standard_normal_functions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

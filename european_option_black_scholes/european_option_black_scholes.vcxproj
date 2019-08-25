@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{15740AB7-07E1-4D31-AA66-111BEC4A97CD}</ProjectGuid>
-    <RootNamespace>intervalbisectionmethod</RootNamespace>
+    <ProjectGuid>{6D9B2A78-BCB5-4F4E-B6FD-64B6585EB06A}</ProjectGuid>
+    <RootNamespace>europeanoptionblackscholes</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -77,10 +77,6 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
-    <Link>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -119,14 +115,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\black_scholes_vanilla\black_scholes_formula.h" />
-    <ClInclude Include="..\black_scholes_vanilla\standard_normal_functions.h" />
-    <ClInclude Include="..\random_number_generation\random.h" />
-    <ClInclude Include="black_scholes_functor.h" />
-    <ClInclude Include="interval_bisection.h" />
+    <ClInclude Include="..\standard_normal_distribution\statistics.h" />
+    <ClInclude Include="european_option_black_scholes.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="black_scholes_functor.cpp" />
+    <ClCompile Include="..\standard_normal_distribution\statistics.cpp" />
+    <ClCompile Include="european_option_black_scholes.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

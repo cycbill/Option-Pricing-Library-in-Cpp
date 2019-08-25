@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "interval_bisection.h"
-#include "black_scholes.h"
+#include "black_scholes_functor.h"
 
 int main()
 {
