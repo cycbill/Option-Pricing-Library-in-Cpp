@@ -115,11 +115,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="black_scholes.h" />
+    <ClInclude Include="..\black_scholes_vanilla\black_scholes_formula.h" />
+    <ClInclude Include="..\black_scholes_vanilla\standard_normal_functions.h" />
+    <ClInclude Include="black_scholes_functor.h" />
     <ClInclude Include="newton_raphson.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="black_scholes.cpp" />
+    <ClCompile Include="black_scholes_functor.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

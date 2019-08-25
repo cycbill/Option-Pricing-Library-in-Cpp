@@ -18,12 +18,21 @@
     <ClInclude Include="newton_raphson.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="black_scholes.h">
+    <ClInclude Include="black_scholes_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\black_scholes_vanilla\black_scholes_formula.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\black_scholes_vanilla\standard_normal_functions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="black_scholes.cpp">
+    <ClCompile Include="black_scholes_functor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
