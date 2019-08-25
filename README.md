@@ -43,6 +43,6 @@
     - Note: Heston Model
 
 ### 4. Jump Diffusion Model
-#### European
+#### European Option
 1. [European Option Pricing with Jump Diffusion Formula](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/european_option_jump_diff_formula)
     - Note: Merton's Jump Diffusion Approximation Formula
