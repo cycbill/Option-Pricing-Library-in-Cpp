@@ -14,10 +14,12 @@
 #### Root-Finding Algorithms
 1. [Interval Bisection Method](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/interval_bisection_method)
     - Note: implied volatility solving as example
+2. [Newton Raphson Method](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/newton_raphson_method)
+    - Note: implied volatility solving as example
 
 ### 2. Black-Scholes Framework
 #### European Option
-1. [European Option Pricing with Analytical Formula](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/black_scholes_vanilla)
+1. [European Option Pricing with Analytical Formula](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/european_option_black_scholes)
 2. [European Option Pricing with Monte Carlo Method](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/black_scholes_monte_carlo)
 3. [European Option Pricing with Finite Difference Method](https://github.com/cycbill/Option-Pricing-Library-in-Cpp/tree/master/european_option_pde_euler)
     - Note: Euler Scheme, Dirichlet Boundary
